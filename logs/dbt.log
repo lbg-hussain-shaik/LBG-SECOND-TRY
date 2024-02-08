@@ -2566,3 +2566,62 @@ select * from final
 [0m14:37:48.697560 [debug] [MainThread]: Command `dbt run` succeeded at 14:37:48.697478 after 3.79 seconds
 [0m14:37:48.697819 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1047c1400>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10708b3d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107022eb0>]}
 [0m14:37:48.698071 [debug] [MainThread]: Flushing usage events
+[0m16:34:12.159965 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1045f9cd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106bfe670>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106c3c4c0>]}
+
+
+============================== 16:34:12.162326 | 08cffade-31c4-44f9-81da-a35483ee7e7d ==============================
+[0m16:34:12.162326 [info ] [MainThread]: Running with dbt=1.7.7
+[0m16:34:12.162602 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'profiles_dir': '/Users/7501693/.dbt', 'log_path': '/Users/7501693/test_env/Test/LBG-SECOND-TRY/logs', 'version_check': 'True', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'invocation_command': 'dbt debug', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m16:34:12.162875 [info ] [MainThread]: dbt version: 1.7.7
+[0m16:34:12.163024 [info ] [MainThread]: python version: 3.9.6
+[0m16:34:12.163168 [info ] [MainThread]: python path: /Users/7501693/test_env/bin/python3
+[0m16:34:12.163307 [info ] [MainThread]: os info: macOS-14.3-arm64-arm-64bit
+[0m16:34:12.334129 [info ] [MainThread]: Using profiles dir at /Users/7501693/.dbt
+[0m16:34:12.334387 [info ] [MainThread]: Using profiles.yml file at /Users/7501693/.dbt/profiles.yml
+[0m16:34:12.334551 [info ] [MainThread]: Using dbt_project.yml file at /Users/7501693/test_env/Test/LBG-SECOND-TRY/dbt_project.yml
+[0m16:34:12.334787 [info ] [MainThread]: adapter type: bigquery
+[0m16:34:12.334935 [info ] [MainThread]: adapter version: 1.7.4
+[0m16:34:12.367883 [info ] [MainThread]: Configuration:
+[0m16:34:12.368073 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m16:34:12.368223 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m16:34:12.368369 [info ] [MainThread]: Required dependencies:
+[0m16:34:12.368554 [debug] [MainThread]: Executing "git --help"
+[0m16:34:12.380486 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--super-prefix=<path>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m16:34:12.380830 [debug] [MainThread]: STDERR: "b''"
+[0m16:34:12.380996 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m16:34:12.381152 [info ] [MainThread]: Connection:
+[0m16:34:12.381345 [info ] [MainThread]:   method: oauth
+[0m16:34:12.381481 [info ] [MainThread]:   database: playpen-b3556a
+[0m16:34:12.381614 [info ] [MainThread]:   execution_project: playpen-b3556a
+[0m16:34:12.381745 [info ] [MainThread]:   schema: test_01
+[0m16:34:12.381878 [info ] [MainThread]:   location: None
+[0m16:34:12.382010 [info ] [MainThread]:   priority: None
+[0m16:34:12.382146 [info ] [MainThread]:   maximum_bytes_billed: None
+[0m16:34:12.382277 [info ] [MainThread]:   impersonate_service_account: None
+[0m16:34:12.382408 [info ] [MainThread]:   job_retry_deadline_seconds: None
+[0m16:34:12.382539 [info ] [MainThread]:   job_retries: 1
+[0m16:34:12.382669 [info ] [MainThread]:   job_creation_timeout_seconds: None
+[0m16:34:12.382799 [info ] [MainThread]:   job_execution_timeout_seconds: None
+[0m16:34:12.382929 [info ] [MainThread]:   keyfile: None
+[0m16:34:12.383059 [info ] [MainThread]:   timeout_seconds: None
+[0m16:34:12.383191 [info ] [MainThread]:   refresh_token: None
+[0m16:34:12.383320 [info ] [MainThread]:   client_id: None
+[0m16:34:12.383449 [info ] [MainThread]:   token_uri: None
+[0m16:34:12.383578 [info ] [MainThread]:   dataproc_region: None
+[0m16:34:12.383706 [info ] [MainThread]:   dataproc_cluster_name: None
+[0m16:34:12.383840 [info ] [MainThread]:   gcs_bucket: None
+[0m16:34:12.383974 [info ] [MainThread]:   dataproc_batch: None
+[0m16:34:12.384201 [info ] [MainThread]: Registered adapter: bigquery=1.7.4
+[0m16:34:12.387558 [debug] [MainThread]: Acquiring new bigquery connection 'debug'
+[0m16:34:12.387925 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m16:34:12.750159 [debug] [MainThread]: On debug: select 1 as id
+[0m16:34:15.128082 [debug] [MainThread]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=playpen-b3556a&j=bq:US:da288e29-b78b-4e03-b19f-6dba211ff521&page=queryresults
+[0m16:34:15.949208 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m16:34:15.950397 [info ] [MainThread]: [32mAll checks passed![0m
+[0m16:34:15.954198 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_success": true, "command_wall_clock_time": 3.823987, "process_user_time": 1.155084, "process_kernel_time": 0.128758, "process_mem_max_rss": "123813888", "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m16:34:15.955591 [debug] [MainThread]: Command `dbt debug` succeeded at 16:34:15.955306 after 3.83 seconds
+[0m16:34:15.956362 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m16:34:15.957047 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1045f9cd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106345af0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x110cc0b20>]}
+[0m16:34:15.957791 [debug] [MainThread]: Flushing usage events
