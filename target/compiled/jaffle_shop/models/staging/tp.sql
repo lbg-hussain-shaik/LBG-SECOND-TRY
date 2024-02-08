@@ -1,0 +1,1 @@
+select * from `playpen-b3556a`.`test_01`.`raw_customers`
