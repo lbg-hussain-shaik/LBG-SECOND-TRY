@@ -1,0 +1,11 @@
+ProjectPOC:
+  target: dev
+  outputs:
+    dev:
+      type: bigquery
+      method: oauth
+      project: playpen-b3556a
+      dataset: test_01 # You can also use "schema" here
+      threads: 4 # Must be a value of 1 or greater 
+      OPTIONAL_CONFIG: VALUE
+

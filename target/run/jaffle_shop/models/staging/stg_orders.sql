@@ -1,8 +1,15 @@
 
+  
+    
 
-  create or replace view `playpen-b3556a`.`test_01`.`stg_orders`
-  OPTIONS()
-  as with source as (
+    create or replace table `playpen-b3556a`.`test_01`.`stg_orders`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      with source as (
     select * from `playpen-b3556a`.`test_01`.`raw_orders`
 
 ),
@@ -19,5 +26,6 @@ renamed as (
 
 )
 
-select * from renamed;
-
+select * from renamed
+    );
+  

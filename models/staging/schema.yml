@@ -6,8 +6,13 @@ models:
       - name: customer_id
         tests:
           - unique
-          - not_null
-
+          - not_null  
+      - name: Testing_Constant
+        tests:
+           - dbt_utils.not_constant    
+      - name: Date_Validation
+        tests:
+          - datecheck
   - name: stg_orders
     columns:
       - name: order_id
@@ -18,7 +23,8 @@ models:
         tests:
           - accepted_values:
               values: ['placed', 'shipped', 'completed', 'return_pending', 'returned']
-
+          - dbt_utils.not_accepted_values:
+              values: ['return_pending']
   - name: stg_payments
     columns:
       - name: payment_id
@@ -29,3 +35,13 @@ models:
         tests:
           - accepted_values:
               values: ['credit_card', 'coupon', 'bank_transfer', 'gift_card']
+      - name: amount
+        tests:
+          - dbt_utils.accepted_range:
+              min_value: 0
+
+              
+
+
+
+
