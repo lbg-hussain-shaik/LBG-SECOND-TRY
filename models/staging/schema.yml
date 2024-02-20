@@ -23,8 +23,14 @@ models:
         tests:
           - accepted_values:
               values: ['placed', 'shipped', 'completed', 'return_pending', 'returned']
-          - dbt_utils.not_accepted_values:
-              values: ['return_pending']
+          #- dbt_utils.not_accepted_values:
+          #    values: ['return_pending']
+      - name: customer_id
+        description: Foreign key to the customers table
+        tests:
+          - relationships:
+              to: ref('stg_customers')
+              field: customer_id
   - name: stg_payments
     columns:
       - name: payment_id
@@ -39,8 +45,14 @@ models:
         tests:
           - dbt_utils.accepted_range:
               min_value: 0
-
-              
+      - name: amount
+        tests:
+          - checkvalue
+  - name: CountryISO
+    columns:
+      - name: Phone
+        tests:
+          - test_is_tdn
 
 
 

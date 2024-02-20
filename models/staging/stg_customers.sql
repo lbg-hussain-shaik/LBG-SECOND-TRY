@@ -17,7 +17,7 @@ renamed as (
         Country,
         ISO,
         '100' as Testing_Constant,
-        cast(current_date as string) as Date_Validation
+        Date_Validation
 
     from source
 
