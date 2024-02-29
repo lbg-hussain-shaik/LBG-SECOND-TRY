@@ -3,6 +3,10 @@ name: 'ProjectPOC'
 config-version: 2
 version: '0.1'
 
+#Define Variables here
+vars:
+    "party_source_system_id" : "CMD"
+
 profile: 'ProjectPOC'
 
 model-paths: ["models"]

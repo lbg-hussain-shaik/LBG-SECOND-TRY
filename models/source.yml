@@ -1,0 +1,18 @@
+version: 2
+
+
+sources:
+
+  
+  - name: test_01
+    description: hosting the historical tables/staging views
+    database: playpen-b3556a
+    schema: test_01
+    tables: 
+      - name: dmdt_cmd_dmd_wdw_sa
+      - name: dmdt_cmd_dmd_wdw_grouping
+      - name: cmdt_customer_full
+      - name: dmdt_cmd_dmd_wdw_client_sa
+      - name: T_DDS_PARTY_CMD
+      - name: T_DDS_PARTY
+      - name: T_DDS_PARTY_STANDARDIZE

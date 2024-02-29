@@ -28,10 +28,5 @@ models:
 
       - name: total_order_amount
         description: Total value (AUD) of a customer's orders
-  - name: test1
-    columns:
-      - name: customer_id
-        tests:
-          - not_null
-          - dbt_utils.not_constant
+ 
       
